@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="../html/inicio.html"><img src="../imagenes/El_rincon_del_olor-removebg-preview.png" alt="Logo"></a>
+        </div>
+        <div class="titulo"><h1>Luxury Perfumes</h1></div>
+        <div class="panelcuenta">
+            <div class="desplegable">
+                <div>            
+                    <img src="../imagenes/sinfoto.png">
+                </div>
+                <span>Perfil</span>
+                <div class="contenidodesplegable">
+                    <a href="../html/registro.html">Registrarse</a><br>
+                    <a href="../html/iniciarsesion.html">Iniciar Sesión</a><br>
+                    <a href="#">Perfil</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="contenedor3">
+    <div class="contenedor_registro">
+        <h1>Registrate Ahora!!</h1><br><br>
+        <form action="" method="POST">
+            <input class="inputs" type="text"  name="nombre" placeholder="Ingrese su Nombre." required><br><br>
+
+            <input class="inputs" type="text"  name="apellidos" placeholder="Ingrese sus Apellidos." required><br><br>
+            
+            <input class="inputs" type="email" name="correo" placeholder="Ingrese su Correo." required><br><br>
+
+            <input class="inputs" type="password"  name="contrasena" placeholder="Cree una Contraseña." required><br><br>
+
+            <input class="inputs" type="password"  name="confirmar_contrasena" placeholder="Confirme su Contraseña" required><br><br>
+
+            <SELECT name="perfil" class="inputs" required>
+                <option>SELECCIONE PERFIL</OPTIOn>
+
+            <!-- <option value="1">1.Admin</OPTION>-->
+                <option value="2">Perfil Personal</OPTION>
+            </SELECT> <br><br>
+
+            <input type="checkbox" class="aceptar_terminos" name="aceptar_terminos" required>
+            <a href="terminos_condiciones.html" target="_blank" onclick="window.open(this.href, 'popupwindow', 'width=600,height=400,scrollbars,resizable'); return false;">Términos y Condiciones</a><br><br>
+
+
+
+            <input class="botonregistro" type="submit" value="Registrarse">
+        </form>
+        <br>
+        <p><a href="../html/iniciarsesion.html">¿Ya tienes cuenta?</a></p>
+    </div>
+    </section>
+</body>
+</html>
